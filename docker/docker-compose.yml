@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  surveymath:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../python:/app
+    working_dir: /app
+    command: /bin/bash
+    tty: true
