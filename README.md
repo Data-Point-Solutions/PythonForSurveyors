@@ -104,7 +104,7 @@ We welcome contributions from the community! If you'd like to contribute, here's
     git checkout -b feature/your-feature-name
     ```
 
-4. **Make Changes:** Add your scripts, fix bugs, or improve documentation.
+4. **Make Changes:** Commit your changes to your branch, ensuring all commits are signed.
 5. **Commit Changes:** Commit your changes with clear and concise commit messages.
 
     ```bash
@@ -117,7 +117,18 @@ We welcome contributions from the community! If you'd like to contribute, here's
     git push origin feature/your-feature-name
     ```
 
-7. **Create a Pull Request:** Go to the original repository on GitHub and click "New Pull Request" to submit your changes.
+7. **Create a Pull Request:** Go to the original repository on GitHub and click "New Pull Request" targeting the `develop` branch of the main repository to submit your changes.
+   - Ensure all checks pass and request a review.
+
+8. **Review Process:** Await approval from a repository maintainer before merging.
+
+## Branch Protection
+
+- **No Direct Pushes to `main`:** All changes must go through pull requests.
+- **Protected Branches:** Both `main` and `develop` are protected branches requiring pull request reviews and passing checks.
+- **Signing Commits:** All commits must be signed using a GPG key.
+
+Thank you for contributing!
 
 ## 📝 Requirements
 
