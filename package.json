@@ -89,9 +89,16 @@
     "yargs-parser": "^21.1.1",
     "yocto-queue": "^1.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "markdownlint-cli": "^0.41.0",
+    "prettier": "^3.3.3"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:python": "flake8 python/",
+    "fix:python": "autopep8 --in-place --aggressive --aggressive --recursive python/",
+    "lint:markdown": "markdownlint docs/**/*.md",
+    "fix:markdown": "prettier --write docs/**/*.md",
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": "",
