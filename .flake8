@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 88
+exclude = .git,__pycache__,docs,venv  # Directories to exclude            # Maximum line length
+ignore = E203, E266, E501, W503    # Ignore specific warnings and errors
+extend-ignore = E203, W503         # Additional ignores for PEP 8 compliance
+max-complexity = 10                # Complexity level for functions/methods

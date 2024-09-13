@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 
+
 def calculate():
     try:
         side1 = side1_entry.get()
@@ -11,10 +12,10 @@ def calculate():
             # Calculate area in acres when both sides are provided
             side1 = float(side1)
             side2 = float(side2)
-            
+
             if side1 <= 0 or side2 <= 0:
                 raise ValueError("Both sides must be positive numbers.")
-                
+
             area_sq_ft = side1 * side2
             area_acres = area_sq_ft / 43560
             result_label.config(text=f"The area is: {area_acres:.4f} acres")
@@ -23,7 +24,7 @@ def calculate():
             # Calculate the missing side when one side and area are provided
             side1 = float(side1)
             area_acres = float(area_acres)
-            
+
             if side1 <= 0 or area_acres <= 0:
                 raise ValueError("Side and area must be positive numbers.")
 
@@ -34,6 +35,7 @@ def calculate():
     except ValueError as e:
         messagebox.showerror("Input Error", str(e))
 
+
 def update_fields():
     if calc_mode.get() == "area":
         side2_entry.config(state="normal")
@@ -42,6 +44,7 @@ def update_fields():
         side2_entry.config(state="disabled")
         area_entry.config(state="normal")
 
+
 # Create the main window
 root = tk.Tk()
 root.title("Rectangle Calculator")
@@ -49,8 +52,24 @@ root.title("Rectangle Calculator")
 calc_mode = tk.StringVar(value="side")
 
 # Radio buttons to select mode
-tk.Radiobutton(root, text="Calculate Area", variable=calc_mode, value="area", command=update_fields).grid(row=0, column=0, columnspan=2)
-tk.Radiobutton(root, text="Calculate Side", variable=calc_mode, value="side", command=update_fields).grid(row=0, column=2, columnspan=2)
+tk.Radiobutton(
+    root,
+    text="Calculate Area",
+    variable=calc_mode,
+    value="area",
+    command=update_fields).grid(
+        row=0,
+        column=0,
+    columnspan=2)
+tk.Radiobutton(
+    root,
+    text="Calculate Side",
+    variable=calc_mode,
+    value="side",
+    command=update_fields).grid(
+        row=0,
+        column=2,
+    columnspan=2)
 
 # Entries for sides and area
 tk.Label(root, text="Side 1 (feet):").grid(row=1, column=0, padx=10, pady=10)
