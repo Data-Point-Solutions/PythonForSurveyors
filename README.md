@@ -42,37 +42,12 @@ applications.
 
 ## 📁 Project Structure
 
-.
-|-- NOTES.md
-|-- README.md
-|-- TODO.md
-|-- assets
-|-- commitlint.config.js
-|-- docker
-|   |-- Dockerfile
-|   `-- docker-compose.yml
-|-- docs
-|   |-- GIS
-|   |-- calculators
-|   |   |-- BearAz.md
-|   |   |-- Curve.md
-|   |   |-- DMS.md
-|   |   |-- LatDep.md
-|   |   |-- RecArea.md
-|   |`-- Traverse.md
-|   `-- overview.md
-|-- package.json
-|-- python
-|   |-- GIS
-|   |-- calculators
-|   |   |-- BearAz.py
-|   |   |-- Curve.py
-|   |   |-- DMS.py
-|   |   |-- LatDep.py
-|   |   |-- RecArea.py
-|   |`-- Traverse.py
-|   `-- requirements.txt
-`-- yarn.lock
+. |-- NOTES.md |-- README.md |-- TODO.md |-- assets |-- commitlint.config.js |--
+docker | |-- Dockerfile |
+`-- docker-compose.yml |-- docs |   |-- GIS |   |-- calculators |   |   |-- BearAz.md |   |   |-- Curve.md |   |   |-- DMS.md |   |   |-- LatDep.md |   |   |-- RecArea.md |   |`--
+Traverse.md |
+`-- overview.md |-- package.json |-- python |   |-- GIS |   |-- calculators |   |   |-- BearAz.py |   |   |-- Curve.py |   |   |-- DMS.py |   |   |-- LatDep.py |   |   |-- RecArea.py |   |`--
+Traverse.py | `-- requirements.txt `-- yarn.lock
 
 4 directories, 7 files
 
