@@ -17,7 +17,6 @@
     "cliui": "^8.0.1",
     "color-convert": "^2.0.1",
     "color-name": "^1.1.4",
-    "commitlint": "^19.5.0",
     "compare-func": "^2.0.0",
     "conventional-changelog-angular": "^7.0.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
@@ -38,7 +37,6 @@
     "git-raw-commits": "^4.0.0",
     "global-directory": "^4.0.1",
     "has-flag": "^3.0.0",
-    "husky": "^9.1.6",
     "import-fresh": "^3.3.0",
     "import-meta-resolve": "^4.1.0",
     "ini": "^4.1.1",
@@ -91,6 +89,8 @@
     "yocto-queue": "^1.1.1"
   },
   "devDependencies": {
+    "commitlint": "^19.5.0",
+    "husky": "^9.1.6",
     "markdownlint-cli": "^0.41.0",
     "prettier": "^3.3.3"
   },
