@@ -17,6 +17,7 @@
     "cliui": "^8.0.1",
     "color-convert": "^2.0.1",
     "color-name": "^1.1.4",
+    "commitlint": "^19.5.0",
     "compare-func": "^2.0.0",
     "conventional-changelog-angular": "^7.0.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
@@ -93,7 +94,14 @@
     "markdownlint-cli": "^0.41.0",
     "prettier": "^3.3.3"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint"
+    }
+  },
   "scripts": {
+    "postinstall": "husky",
     "lint:python": "flake8 python/",
     "fix:python": "autopep8 --in-place --aggressive --aggressive --recursive python/",
     "lint:markdown": "markdownlint docs/**/*.md",
